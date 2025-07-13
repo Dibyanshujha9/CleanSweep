@@ -17,22 +17,22 @@ export function AboutUs() {
           <div className="space-y-8">
             <div className="rounded-lg overflow-hidden shadow-lg">
               <Image
-                src="https://images.unsplash.com/photo-1541123437800-1a74d4d78093?q=80&w=600&auto=format&fit=crop"
-                alt="CleanSweep Pro Team"
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=600&auto=format&fit=crop"
+                alt="CleanSweep Pro Team collaborating"
                 width={600}
                 height={400}
                 className="w-full h-auto object-cover"
-                data-ai-hint="team smiling"
+                data-ai-hint="team collaborating"
               />
             </div>
             <div className="rounded-lg overflow-hidden shadow-lg">
                <Image
-                src="https://images.unsplash.com/photo-1549887552-6e5b94116093?q=80&w=600&auto=format&fit=crop"
-                alt="Map of service area"
+                src="https://images.unsplash.com/photo-1526778548025-13e7b15a35e2?q=80&w=600&auto=format&fit=crop"
+                alt="Map showing service area"
                 width={600}
                 height={400}
                 className="w-full h-auto object-cover"
-                data-ai-hint="map Forster"
+                data-ai-hint="map location"
               />
             </div>
           </div>

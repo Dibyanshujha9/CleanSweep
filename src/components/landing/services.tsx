@@ -5,23 +5,23 @@ import { Card, CardContent } from "@/components/ui/card";
 const services = [
   {
     title: "Domestic Cleaning",
-    image: "https://images.unsplash.com/photo-1564078513229-14a1c3855a82?q=80&w=600&auto=format&fit=crop",
-    hint: "house interior",
+    image: "https://images.unsplash.com/photo-1585421514738-01798e368626?q=80&w=600&auto=format&fit=crop",
+    hint: "clean living room",
   },
   {
     title: "Carpet Cleaning",
-    image: "https://images.unsplash.com/photo-1522778842609-173878ce74e3?q=80&w=600&auto=format&fit=crop",
-    hint: "carpet cleaning",
+    image: "https://images.unsplash.com/photo-1605663869915-1c495c3735ce?q=80&w=600&auto=format&fit=crop",
+    hint: "vacuuming carpet",
   },
   {
     title: "Commercial Cleaning",
-    image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=600&auto=format&fit=crop",
-    hint: "office space",
+    image: "https://images.unsplash.com/photo-1600880292210-859b9101bf4e?q=80&w=600&auto=format&fit=crop",
+    hint: "modern office",
   },
   {
     title: "Glass Window Cleaning",
-    image: "https://images.unsplash.com/photo-1600172453635-b9ad041e2846?q=80&w=600&auto=format&fit=crop",
-    hint: "window cleaning",
+    image: "https://images.unsplash.com/photo-1596634430752-32a55855c328?q=80&w=600&auto=format&fit=crop",
+    hint: "cleaning window",
   },
 ];
 
