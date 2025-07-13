@@ -4,8 +4,7 @@ import Link from "next/link";
 import { MoveRight } from "lucide-react";
 
 export function Hero() {
-  const phoneNumber = "+61451215776";
-  const smsLink = `sms:${phoneNumber}`;
+  const emailLink = "mailto:jhadibyanshu46@gmail.com";
   return (
     <section id="home" className="relative w-full h-[90vh] min-h-[600px] max-h-[800px] flex items-center justify-center text-center text-white overflow-hidden">
       <div className="absolute inset-0 z-0">
@@ -27,7 +26,7 @@ export function Hero() {
           Reliable, affordable, and spotless cleaning – tailored to your space.
         </p>
         <Button asChild size="lg" className="shadow-lg button-shine opacity-0 fade-in-delay">
-          <Link href={smsLink}>
+          <Link href={emailLink}>
             Book a Service <MoveRight className="ml-2"/>
           </Link>
         </Button>
