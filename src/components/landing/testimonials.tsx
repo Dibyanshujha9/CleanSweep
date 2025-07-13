@@ -14,28 +14,28 @@ import { Star } from "lucide-react";
 const testimonials = [
   {
     name: "Sarah L.",
-    image: "https://placehold.co/100x100.png",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&auto=format&fit=crop",
     hint: "woman portrait",
     rating: 5,
     review: "Absolutely fantastic service! My home has never been cleaner. The team was professional, punctual, and incredibly thorough. Highly recommend CleanSweep Pro!",
   },
   {
     name: "John D.",
-    image: "https://placehold.co/100x100.png",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop",
     hint: "man portrait",
     rating: 5,
     review: "We used them for our office cleaning, and the difference is night and day. Their attention to detail is impeccable. Our workspace feels so much more productive now.",
   },
   {
     name: "Emily R.",
-    image: "https://placehold.co/100x100.png",
+    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=100&auto=format&fit=crop",
     hint: "person smiling",
     rating: 5,
     review: "The eco-friendly products were a huge plus for me and my family. The house smells fresh and clean, not like harsh chemicals. A wonderful, reliable service.",
   },
   {
     name: "Mark T.",
-    image: "https://placehold.co/100x100.png",
+    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=100&auto=format&fit=crop",
     hint: "man smiling",
     rating: 4,
     review: "Great value and very flexible with scheduling. They did a great job on a deep clean before we moved in. A few minor spots missed but they came back to fix it immediately.",

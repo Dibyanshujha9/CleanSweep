@@ -5,22 +5,22 @@ import { Card, CardContent } from "@/components/ui/card";
 const services = [
   {
     title: "Domestic Cleaning",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1564078513229-14a1c3855a82?q=80&w=600&auto=format&fit=crop",
     hint: "house interior",
   },
   {
     title: "Carpet Cleaning",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1522778842609-173878ce74e3?q=80&w=600&auto=format&fit=crop",
     hint: "carpet cleaning",
   },
   {
     title: "Commercial Cleaning",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=600&auto=format&fit=crop",
     hint: "office space",
   },
   {
     title: "Glass Window Cleaning",
-    image: "https://placehold.co/600x400.png",
+    image: "https://images.unsplash.com/photo-1600172453635-b9ad041e2846?q=80&w=600&auto=format&fit=crop",
     hint: "window cleaning",
   },
 ];

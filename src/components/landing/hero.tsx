@@ -9,7 +9,7 @@ export function Hero() {
     <section id="home" className="relative w-full h-[90vh] min-h-[600px] max-h-[800px] flex items-center justify-center text-center text-white overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://placehold.co/1920x1080.png"
+          src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1920&auto=format&fit=crop"
           alt="Professional cleaning in progress"
           fill
           priority

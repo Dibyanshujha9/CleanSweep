@@ -17,7 +17,7 @@ export function AboutUs() {
           <div className="space-y-8">
             <div className="rounded-lg overflow-hidden shadow-lg">
               <Image
-                src="https://placehold.co/600x400.png"
+                src="https://images.unsplash.com/photo-1541123437800-1a74d4d78093?q=80&w=600&auto=format&fit=crop"
                 alt="CleanSweep Pro Team"
                 width={600}
                 height={400}
@@ -27,7 +27,7 @@ export function AboutUs() {
             </div>
             <div className="rounded-lg overflow-hidden shadow-lg">
                <Image
-                src="https://placehold.co/600x400.png"
+                src="https://images.unsplash.com/photo-1549887552-6e5b94116093?q=80&w=600&auto=format&fit=crop"
                 alt="Map of service area"
                 width={600}
                 height={400}
