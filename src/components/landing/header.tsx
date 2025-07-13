@@ -16,6 +16,9 @@ export function Header() {
     { href: "#faq", label: "FAQ" },
   ];
 
+  const phoneNumber = "+61451215776";
+  const smsLink = `sms:${phoneNumber}`;
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
@@ -37,7 +40,9 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-4">
-           <Button className="hidden md:flex">Book a Service</Button>
+           <Button asChild className="hidden md:flex">
+             <Link href={smsLink}>Book a Service</Link>
+           </Button>
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
             <SheetTrigger asChild className="md:hidden">
               <Button variant="outline" size="icon">
@@ -63,7 +68,9 @@ export function Header() {
                     </Link>
                   ))}
                 </nav>
-                <Button className="mt-6">Book a Service</Button>
+                <Button asChild className="mt-6">
+                  <Link href={smsLink}>Book a Service</Link>
+                </Button>
               </div>
             </SheetContent>
           </Sheet>

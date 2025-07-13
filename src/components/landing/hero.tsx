@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export function Hero() {
+  const phoneNumber = "+61451215776";
+  const smsLink = `sms:${phoneNumber}`;
   return (
     <section id="home" className="relative w-full h-[80vh] min-h-[500px] max-h-[700px] flex items-center justify-center text-center text-white overflow-hidden">
       <div className="absolute inset-0 z-0">
@@ -21,7 +24,9 @@ export function Hero() {
         <p className="max-w-2xl mx-auto text-lg md:text-xl text-primary-foreground/90 mb-8 text-shadow">
           Reliable, affordable, and spotless cleaning – tailored to your space.
         </p>
-        <Button size="lg" className="shadow-lg">Book a Service</Button>
+        <Button asChild size="lg" className="shadow-lg">
+          <Link href={smsLink}>Book a Service</Link>
+        </Button>
       </div>
     </section>
   );
