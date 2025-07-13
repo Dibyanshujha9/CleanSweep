@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Brush } from "lucide-react";
+import { Menu, Brush, MoveRight } from "lucide-react";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,7 +32,7 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-foreground/60 transition-colors hover:text-foreground/80"
+              className="text-foreground/60 transition-colors hover:text-primary"
             >
               {link.label}
             </Link>
@@ -40,8 +40,8 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-4">
-           <Button asChild className="hidden md:flex">
-             <Link href={smsLink}>Book a Service</Link>
+           <Button asChild className="hidden md:flex button-shine">
+             <Link href={smsLink}>Book a Service <MoveRight className="ml-2" /></Link>
            </Button>
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
             <SheetTrigger asChild className="md:hidden">

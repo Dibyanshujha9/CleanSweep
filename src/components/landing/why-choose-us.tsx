@@ -46,7 +46,7 @@ export function WhyChooseUs() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
-            <Card key={index} className="text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+            <Card key={index} className="text-center border-2 border-transparent hover:border-primary hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
               <CardHeader className="items-center">
                 <div className="bg-primary/10 p-4 rounded-full mb-4">
                   {benefit.icon}
