@@ -1,27 +1,27 @@
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { SprayCan, Wind, Building, Sparkles } from "lucide-react";
 
 const services = [
   {
+    icon: <SprayCan className="w-10 h-10 text-primary" />,
     title: "Domestic Cleaning",
-    image: "https://images.unsplash.com/photo-1585421514738-01798e368626?q=80&w=600&auto=format&fit=crop",
-    hint: "clean living room",
+    description: "Tailored cleaning for your home, ensuring a pristine living space.",
   },
   {
+    icon: <Wind className="w-10 h-10 text-primary" />,
     title: "Carpet Cleaning",
-    image: "https://images.unsplash.com/photo-1605663869915-1c495c3735ce?q=80&w=600&auto=format&fit=crop",
-    hint: "vacuuming carpet",
+    description: "Deep cleaning for carpets, removing stains and allergens.",
   },
   {
+    icon: <Building className="w-10 h-10 text-primary" />,
     title: "Commercial Cleaning",
-    image: "https://images.unsplash.com/photo-1600880292210-859b9101bf4e?q=80&w=600&auto=format&fit=crop",
-    hint: "modern office",
+    description: "Professional cleaning services for offices and commercial properties.",
   },
   {
-    title: "Glass Window Cleaning",
-    image: "https://images.unsplash.com/photo-1596634430752-32a55855c328?q=80&w=600&auto=format&fit=crop",
-    hint: "cleaning window",
+    icon: <Sparkles className="w-10 h-10 text-primary" />,
+    title: "Window Cleaning",
+    description: "Streak-free cleaning for all types of windows, inside and out.",
   },
 ];
 
@@ -37,19 +37,15 @@ export function Services() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="overflow-hidden group rounded-lg">
-              <CardContent className="p-0 relative">
-                <Image
-                  src={service.image}
-                  alt={service.title}
-                  width={600}
-                  height={400}
-                  className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110"
-                  data-ai-hint={service.hint}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent group-hover:from-black/70 transition-all duration-300 flex items-end">
-                  <h3 className="text-white text-xl font-bold p-4">{service.title}</h3>
-                </div>
+            <Card key={index} className="text-center border-2 border-transparent hover:border-primary/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <CardHeader className="items-center pb-4">
+                    <div className="p-4 bg-primary/10 rounded-full">
+                        {service.icon}
+                    </div>
+                </CardHeader>
+              <CardContent>
+                <CardTitle className="text-xl font-semibold mb-2">{service.title}</CardTitle>
+                <p className="text-muted-foreground text-sm">{service.description}</p>
               </CardContent>
             </Card>
           ))}

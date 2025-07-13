@@ -17,7 +17,7 @@ export function AboutUs() {
           <div className="space-y-8">
             <div className="rounded-lg overflow-hidden shadow-lg">
               <Image
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=600&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=600&auto=format&fit=crop"
                 alt="CleanSweep Pro Team collaborating"
                 width={600}
                 height={400}
@@ -27,7 +27,7 @@ export function AboutUs() {
             </div>
             <div className="rounded-lg overflow-hidden shadow-lg">
                <Image
-                src="https://images.unsplash.com/photo-1526778548025-13e7b15a35e2?q=80&w=600&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1569336415962-a42945a473ee?q=80&w=600&auto=format&fit=crop"
                 alt="Map showing service area"
                 width={600}
                 height={400}
