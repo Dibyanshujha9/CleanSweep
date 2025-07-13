@@ -28,7 +28,7 @@ export function AboutUs() {
   return (
     <section id="about-us" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 scroll-reveal">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tighter">About CleanSweep Pro</h2>
           <p className="max-w-2xl mx-auto mt-4 text-lg text-muted-foreground">
             A leading name in professional cleaning services, built on trust, efficiency, and customer satisfaction.
@@ -36,17 +36,19 @@ export function AboutUs() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {aboutPoints.map((point, index) => (
-                <Card key={index} className="text-center border-2 border-transparent hover:border-primary/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                    <CardHeader className="items-center pb-4">
-                        <div className="p-4 bg-primary/10 rounded-full">
-                            {point.icon}
-                        </div>
-                    </CardHeader>
-                    <CardContent>
-                        <h3 className="text-xl font-semibold mb-2">{point.title}</h3>
-                        <p className="text-muted-foreground text-sm">{point.description}</p>
-                    </CardContent>
-                </Card>
+                <div key={index} className="scroll-reveal" style={{ transitionDelay: `${index * 100}ms` }}>
+                    <Card className="text-center h-full card-3d">
+                        <CardHeader className="items-center pb-4">
+                            <div className="p-4 bg-primary/10 rounded-full">
+                                {point.icon}
+                            </div>
+                        </CardHeader>
+                        <CardContent>
+                            <h3 className="text-xl font-semibold mb-2">{point.title}</h3>
+                            <p className="text-muted-foreground text-sm">{point.description}</p>
+                        </CardContent>
+                    </Card>
+                </div>
             ))}
         </div>
       </div>

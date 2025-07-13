@@ -29,7 +29,7 @@ export function Services() {
   return (
     <section id="services" className="py-16 md:py-24 bg-card">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 scroll-reveal">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tighter">Our Services</h2>
           <p className="max-w-2xl mx-auto mt-4 text-lg text-muted-foreground">
             From homes to offices, we offer a wide range of cleaning solutions.
@@ -37,20 +37,22 @@ export function Services() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="text-center border-2 border-transparent hover:border-primary/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                <CardHeader className="items-center pb-4">
-                    <div className="p-4 bg-primary/10 rounded-full">
-                        {service.icon}
-                    </div>
-                </CardHeader>
-              <CardContent>
-                <CardTitle className="text-xl font-semibold mb-2">{service.title}</CardTitle>
-                <p className="text-muted-foreground text-sm">{service.description}</p>
-              </CardContent>
-            </Card>
+            <div key={index} className="scroll-reveal" style={{ transitionDelay: `${index * 100}ms` }}>
+              <Card className="text-center h-full card-3d">
+                  <CardHeader className="items-center pb-4">
+                      <div className="p-4 bg-primary/10 rounded-full">
+                          {service.icon}
+                      </div>
+                  </CardHeader>
+                <CardContent>
+                  <CardTitle className="text-xl font-semibold mb-2">{service.title}</CardTitle>
+                  <p className="text-muted-foreground text-sm">{service.description}</p>
+                </CardContent>
+              </Card>
+            </div>
           ))}
         </div>
-        <div className="text-center mt-12">
+        <div className="text-center mt-12 scroll-reveal">
           <Button variant="outline" size="lg">More Services</Button>
         </div>
       </div>

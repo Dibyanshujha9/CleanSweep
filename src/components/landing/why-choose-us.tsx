@@ -38,7 +38,7 @@ export function WhyChooseUs() {
   return (
     <section id="why-us" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 scroll-reveal">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tighter">Why Choose Us?</h2>
           <p className="max-w-2xl mx-auto mt-4 text-lg text-muted-foreground">
             We deliver exceptional quality and reliability. Here's what sets us apart.
@@ -46,19 +46,21 @@ export function WhyChooseUs() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
-            <Card key={index} className="text-center border-2 border-transparent hover:border-primary hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
-              <CardHeader className="items-center">
-                <div className="bg-primary/10 p-4 rounded-full mb-4">
-                  {benefit.icon}
-                </div>
-                <CardTitle className="text-xl font-semibold">{benefit.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-base">
-                  {benefit.description}
-                </CardDescription>
-              </CardContent>
-            </Card>
+            <div key={index} className="scroll-reveal" style={{ transitionDelay: `${index * 100}ms` }}>
+              <Card className="text-center h-full card-3d">
+                <CardHeader className="items-center">
+                  <div className="bg-primary/10 p-4 rounded-full mb-4">
+                    {benefit.icon}
+                  </div>
+                  <CardTitle className="text-xl font-semibold">{benefit.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-base">
+                    {benefit.description}
+                  </CardDescription>
+                </CardContent>
+              </Card>
+            </div>
           ))}
         </div>
       </div>

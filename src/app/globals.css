@@ -106,6 +106,17 @@ body {
   .fade-in-delay {
     animation: fadeIn 1s ease-in-out 0.5s forwards;
   }
+  
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  .in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
   @keyframes fadeIn {
     from {
@@ -139,6 +150,15 @@ body {
   .button-shine:hover::after {
     opacity: 1;
     transform: scale(2) rotate(45deg);
+  }
+
+  .card-3d {
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  .card-3d:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.15);
   }
 
 }
