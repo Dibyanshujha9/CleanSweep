@@ -1,5 +1,5 @@
 "use client";
-
+// Made changes 
 import { useEffect } from "react";
 import { Header } from "@/components/landing/header";
 import { Hero } from "@/components/landing/hero";
