@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'CleanSweep Pro',
   description: 'Professional Cleaning for Homes & Offices',
 };
-
+//made changes
 export default function RootLayout({
   children,
 }: Readonly<{
